@@ -16,7 +16,7 @@ const RegisterForm = (props) => {
                         setLoginVisible();
                     }
                 }).catch((err) => {
-                    alert('REGISTER ERROR:=>', err)
+                    console.log(err.message)
                 })
         )
     }

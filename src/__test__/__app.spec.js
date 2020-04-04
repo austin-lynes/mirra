@@ -1,7 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import { shallow } from 'enzyme';
-import { toBeInTheDocument } from '@testing-library/jest-dom';
 
 //#region  MOCK
 import App from '../App';

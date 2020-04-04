@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/welcome-screen renders properly 1`] = `
+<div
+  className="welcome"
+>
+  <Modal
+    close={[Function]}
+    isLogin={true}
+    visible={false}
+  >
+    <LoginForm />
+  </Modal>
+  <Modal
+    close={[Function]}
+    visible={false}
+  >
+    <RegisterForm
+      setLoginVisible={[Function]}
+    />
+  </Modal>
+  <h2
+    className="welcome banner"
+    data-testid="welcome-banner"
+  >
+    Welcome to Mirra!
+  </h2>
+  <div
+    className="buttons"
+  >
+    <button
+      data-testid="button"
+      onClick={[Function]}
+    >
+      Login
+    </button>
+    <button
+      data-testid="button"
+      onClick={[Function]}
+    >
+      Register
+    </button>
+  </div>
+</div>
+`;
