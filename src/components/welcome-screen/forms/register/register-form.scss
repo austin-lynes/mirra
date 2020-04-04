@@ -1,0 +1,96 @@
+.register {
+    display: flex;
+    width: 100%;
+    background: white;
+    border-radius: 28px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 1rem;
+    border: none;
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.2);
+    h1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        width: 100%;
+        background: $primaryBackgroundColor;
+        padding: 1rem;
+        color: white;
+    }
+    .names {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 85%;
+        input {
+            background: #efefef;
+            width: 45%;
+        }
+        label {
+            width: 45%;
+        }
+    }
+    .personal-info {
+        margin-right: 80px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 85%;
+        label {
+            width: 20%;
+        }
+        input {
+            background: #efefef;
+            width: 46%;
+        }
+        select {
+            width: 46%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: larger;
+            background-color: #efefef;
+            border:3px solid #efefef;
+        }
+    }
+    input {
+        text-align: center;
+        margin: 10px auto;
+        background: #efefef;
+        font-size: larger;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+    label {
+        margin: 0 auto;
+        font-size: larger;
+        font-weight: bold;
+        color: rgb(187, 185, 185);
+        padding: 1rem;
+        width: 80%;
+    }
+    .button {
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: larger;
+        background: #efefef;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 20%;
+        color: $primaryBackgroundColor;
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: dodgerblue;
+        }
+    }
+}

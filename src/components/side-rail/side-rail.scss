@@ -1,0 +1,179 @@
+.side-rail {
+    position: relative;
+    max-width: 60px;
+    padding: 5px;
+    height: 100vh;
+    font-size: small;
+    text-align: center;
+    .icon-button {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        color: #dedede;
+        text-align: center;
+
+        .icon {
+            padding: 10px;
+            fill: #dedede;
+            &:hover {
+                &.alerts {
+                    stroke-width: 1px;
+                    path {
+                        fill: yellow;
+                        stroke-width: 1px;
+                        stroke: darken(yellow, 35%);
+                    }
+                }
+                &.friends {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightpink;
+                        stroke: darkviolet;
+                        stroke-width: 1px;
+                    }
+                }
+                &.profile {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightblue;
+                        stroke: blue;
+                        stroke-width: 1px;
+                    }
+                }
+                &.recipes {
+                    stroke-width: 1px;
+                    path {
+                        fill: rgb(245, 205, 171);
+                        stroke: brown;
+                        stroke-width: 1px;
+                    }
+                }
+                &.budget {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightgreen;
+                        stroke: green;
+                        stroke-width: 1px;
+                    }
+                }
+                &.chores {
+                    stroke: brown;
+                    g {
+                        fill: tan;
+                        stroke-width: 1px;
+                    }
+                }
+                &.income {
+                    stroke: goldenrod;
+                    path {
+                        fill: gold;
+                        stroke-width: 1px;
+                    }
+                }
+                &.shopping {
+                    stroke: purple;
+                    path {
+                        fill: lightpink;
+                        stroke-width: 1px;
+                    }
+                }
+                &.settings {
+                    stroke: darkslategrey;
+                    path {
+                        fill: lightgrey;
+                        stroke-width: 1px;
+                    }
+                }
+            }
+            &.active {
+                &.alerts {
+                    path {
+                        fill: yellow;
+                    }
+                }
+                &.friends {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightpink;
+                        stroke: darkviolet;
+                        stroke-width: 1px;
+                    }
+                }
+                &.profile {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightblue;
+                        stroke: blue;
+                        stroke-width: 1px;
+                    }
+                }
+                &.recipes {
+                    stroke-width: 1px;
+                    path {
+                        fill: rgb(245, 205, 171);
+                        stroke: brown;
+                        stroke-width: 1px;
+                    }
+                }
+                &.budget {
+                    stroke-width: 1px;
+                    path {
+                        fill: lightgreen;
+                        stroke: green;
+                        stroke-width: 1px;
+                    }
+                }
+                &.chores {
+                    stroke: brown;
+                    g {
+                        fill: tan;
+                        stroke-width: 1px;
+                    }
+                }
+                &.income {
+                    stroke: goldenrod;
+                    path {
+                        fill: gold;
+                        stroke-width: 1px;
+                    }
+                }
+                &.shopping {
+                    stroke: purple;
+                    path {
+                        fill: lightpink;
+                        stroke-width: 1px;
+                    }
+                }
+                &.settings {
+                    stroke: darkslategrey;
+                    path {
+                        fill: lightgrey;
+                        stroke-width: 1px;
+                    }
+                }
+            }
+        }
+        .icon-name {
+            width: 100%;
+        }
+
+        animation: 1s ease-in-out 0s 1 fadeIn;
+        &:hover {
+            cursor: pointer;
+            color: white;
+            .icon {
+                fill: white;
+                animation: 0.4s ease-in-out pop;
+            }
+        }
+    }
+}
+.top {
+    position: absolute;
+    top: 70px;
+}
+.bottom {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+}

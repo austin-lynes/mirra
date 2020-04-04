@@ -1,0 +1,52 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./animations.scss";
+
+@import "../components/welcome-screen/welcome-screen.scss";
+@import "../components/welcome-screen/forms/login/login-form.scss";
+@import "../components/welcome-screen/forms/register/register-form.scss";
+@import "../components/side-rail/side-rail.scss";
+@import "../components/foreground/foreground.scss";
+
+@import "../mirra-ui/modal/modal.scss";
+
+*:focus{
+  outline: none;
+}
+*{
+  user-select: none;
+}
+body {
+  overflow: hidden;
+}
+
+.view {
+  background-color: $primaryBackgroundColor;
+  overflow: hidden;
+  border-radius: 28px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.loading-indicator{
+    z-index: 999;
+    position:absolute;
+    display: flex;
+    bottom:20px;
+    left:20px;
+    align-items: center;
+ 
+}
+.foreground {
+  background-color: white;
+}
+
+.drag-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  -webkit-app-region: drag;
+}

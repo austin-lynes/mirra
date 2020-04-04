@@ -1,0 +1,96 @@
+.foreground {
+    position: absolute;
+    right: 0;
+    width: 3%;
+    &.half-open {
+        width: 70%;
+    }
+    &.open {
+        width: 96%;
+    }
+    height: 100vh;
+    border-radius: 28px;
+    transition: width 0.5s ease-in-out;
+    .icon-button {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        color: #dedede;
+        text-align: center;
+        .icon {
+            fill: #dedede;
+            padding: 5px;
+            position: absolute;
+            &.back {
+                top: 50%;
+                padding: 10px;
+                left: -30px;
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 28px;
+                fill: #78c6ff;
+
+                transform: rotate(180deg);
+
+                &.open {
+                    transform: rotate(0deg);
+                }
+                &:hover {
+                    animation: 0.5s ease-in-out 0s 1 rollClockwise;
+                    fill: dodgerblue;
+                    transform: rotate(0deg);
+                    &.open {
+                        animation: 0.5s ease-in-out 0s 1 rollCounterClockwise;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            &.close-icon {
+                top: 10px;
+                left: -61px;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                &:hover {
+                    path{
+                        fill: pink;
+                    }
+                    stroke: red;
+                    stroke-width: 1px;
+                    animation: 0.4s ease-in-out close_pop;
+                }
+            }
+        }
+        .icon-name {
+            width: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+@keyframes close_pop {
+    0% {
+        position: relative;
+        left: -61px;
+    }
+    25% {
+        position: relative;
+        left: -56px;
+    }
+    50% {
+        position: relative;
+        left: -61px;
+    }
+    75% {
+        position: relative;
+        left: -63px;
+    }
+    100% {
+        position: relative;
+        left: -61px;
+    }
+}
