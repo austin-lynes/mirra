@@ -7,13 +7,13 @@ import { connect } from "react-redux";
 
 
 //ROUTER 
-import PrivateRoute from './util/privateRoute';
+import PrivateRoute from "./util/privateRoute";
 import { Route } from "react-router-dom";
 import Dashboard from "./components/dashboard-screen";
 
 //ASYNC STUFF
-import { usePromiseTracker } from 'react-promise-tracker';
-import Loader from 'react-loader-spinner';
+import { usePromiseTracker } from "react-promise-tracker";
+import Loader from "react-loader-spinner";
 
 
 function App(props) {
@@ -27,20 +27,20 @@ function App(props) {
     
     return (
       promiseInProgress &&
-      <div className='loading-indicator'>
-        <Loader className='item' type="MutatingDots" color="white" height="100" width="100" />
+      <div className="loading-indicator">
+        <Loader className="item" type="MutatingDots" color="white" height="100" width="100" />
       </div>
     )
   
   }
 
   return (
-    <div data-testid='view' className="view">
+    <div data-testid="view" className="view">
       <div className="drag-bar" />
       <LoadingIndicator />
-      <Route exact path='/' component={WelcomeScreen} />
+      <Route exact path="/" component={WelcomeScreen} />
       <PrivateRoute
-        path='/dashboard'
+        path="/dashboard"
         component={Dashboard} />
 
     </div>

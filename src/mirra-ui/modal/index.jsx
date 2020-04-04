@@ -1,6 +1,6 @@
-import React from 'react';
-import IconButton from '../icon-button';
-import { CloseMini } from '../../icons';
+import React from "react";
+import IconButton from "../icon-button";
+import { CloseMini } from "../../icons";
 
 const Modal = (props) => {
     const { visible, children, isLogin, close } = props
@@ -8,9 +8,9 @@ const Modal = (props) => {
         return null
     }
     return (
-        <div className='modal'>
-            <div className='backdrop'></div>
-            <div className={`popup ${isLogin ? 'small' : ''}`}>
+        <div className="modal">
+            <div className="backdrop"></div>
+            <div className={`popup ${isLogin ? "small" : ""}`}>
                 <IconButton onClick={close} Icon={<CloseMini />} />
                 {children}
             </div>

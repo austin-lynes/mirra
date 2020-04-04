@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 // UI 
-import IconButton from '../../mirra-ui/icon-button';
+import IconButton from "../../mirra-ui/icon-button";
 // ICONS
-import { Back, Close } from '../../icons';
+import { Back, Close } from "../../icons";
 //REDUX
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 //ACTIONS
-import { toggleForeground, closeForeground } from '../../store/actions/app'
+import { toggleForeground, closeForeground } from "../../store/actions/app"
 
 
 const Foreground = (props) => {
@@ -14,7 +14,7 @@ const Foreground = (props) => {
     const { context } = app
     console.log(context);
     return (
-        <div className={`foreground ${foreground_open ? 'open' : !foreground_open && context.length > 0 ? 'half-open' : ''}`}>
+        <div className={`foreground ${foreground_open ? "open" : !foreground_open && context.length > 0 ? "half-open" : ""}`}>
             <IconButton Icon={<Back open={!foreground_open} />} onClick={toggleForeground} />
             {context.length > 0 && <IconButton onClick={closeForeground} Icon={<Close />} />}
         </div>

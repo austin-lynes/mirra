@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import IconButton from '../../mirra-ui/icon-button';
-import { connect } from 'react-redux';
-import { openForeground, setIconActive } from '../../store/actions/app'
+import React, { useState } from "react";
+import IconButton from "../../mirra-ui/icon-button";
+import { connect } from "react-redux";
+import { openForeground, setIconActive } from "../../store/actions/app"
 
 
 
@@ -12,9 +12,9 @@ const SideRail = (props) => {
     const { topMenuData, bottomMenuData } = app;
 
     return (
-        <div className='side-rail'>
+        <div className="side-rail">
 
-            <div className='top'>
+            <div className="top">
                 {
                     topMenuData.map(
                         (button, i) =>
@@ -25,12 +25,12 @@ const SideRail = (props) => {
                                 onClick={(e) => {
                                     e.preventDefault();
                                     openForeground(button.name)
-                                    setIconActive('top', button.id);
+                                    setIconActive("top", button.id);
                                 }}
                             />)
                 }
             </div>
-            <div className='bottom'>
+            <div className="bottom">
                 {
                     bottomMenuData.map(
                         (button, i) =>
@@ -41,7 +41,7 @@ const SideRail = (props) => {
                                 onClick={openForeground}
                                 onClick={(e) => {
                                     openForeground(button.name)
-                                    setIconActive('bottom', button.id);
+                                    setIconActive("bottom", button.id);
                                 }}
 
                             />)

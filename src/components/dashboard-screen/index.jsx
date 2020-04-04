@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import SideRail from "../side-rail";
 import Foreground from "../foreground";

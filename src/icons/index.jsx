@@ -1,9 +1,9 @@
 //#region ICONS 
-import React from 'react';
+import React from "react";
 
 export const Alerts = (props) => (
     <svg
-        className={`icon alerts ${props.active ? 'active' : ''}`}
+        className={`icon alerts ${props.active ? "active" : ""}`}
         width="36"
         height="37"
         viewBox="0 0 36 37"
@@ -25,7 +25,7 @@ export const Alerts = (props) => (
 
 export const Back = (props) => (
     <svg
-        className={`icon back ${!props.open ? 'open' : ''} ${props.active ? 'active' : ''}`}
+        className={`icon back ${!props.open ? "open" : ""} ${props.active ? "active" : ""}`}
         width="40"
         height="40"
         viewBox="0 0 36 36"
@@ -40,7 +40,7 @@ export const Back = (props) => (
 );
 export const Budget = (props) => (
     <svg
-        className={`icon budget ${props.active ? 'active' : ''}`}
+        className={`icon budget ${props.active ? "active" : ""}`}
         width="36"
         height="37"
         viewBox="0 0 36 37"
@@ -58,7 +58,7 @@ export const Budget = (props) => (
 );
 export const Chores = (props) => (
     <svg
-        className={`icon chores ${props.active ? 'active' : ''}`}
+        className={`icon chores ${props.active ? "active" : ""}`}
         width="36"
         height="37"
         viewBox="0 0 36 37"
@@ -82,7 +82,7 @@ export const Chores = (props) => (
 
 export const Close = (props) => (
     <svg
-        className={`icon close-icon ${props.active ? 'active' : ''}`}
+        className={`icon close-icon ${props.active ? "active" : ""}`}
         width="37"
         height="37"
         viewBox="0 0 37 37"
@@ -111,7 +111,7 @@ export const CloseMini = (props) => (
 
 export const Settings = (props) => (
     <svg
-        className={`icon settings ${props.active ? 'active' : ''}`}
+        className={`icon settings ${props.active ? "active" : ""}`}
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -125,7 +125,7 @@ export const Settings = (props) => (
 );
 export const Friends = (props) => (
     <svg
-        className={`icon friends ${props.active ? 'active' : ''}`}
+        className={`icon friends ${props.active ? "active" : ""}`}
         width="37"
         height="37"
         viewBox="0 0 37 37"
@@ -139,7 +139,7 @@ export const Friends = (props) => (
 );
 export const Income = (props) => (
     <svg
-        className={`icon income ${props.active ? 'active' : ''}`}
+        className={`icon income ${props.active ? "active" : ""}`}
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -154,7 +154,7 @@ export const Income = (props) => (
 );
 export const Profile = (props) => (
     <svg
-        className={`icon profile ${props.active ? 'active' : ''}`}
+        className={`icon profile ${props.active ? "active" : ""}`}
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -169,7 +169,7 @@ export const Profile = (props) => (
 );
 export const Shopping = (props) => (
     <svg
-        className={`icon shopping ${props.active ? 'active' : ''}`}
+        className={`icon shopping ${props.active ? "active" : ""}`}
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -184,7 +184,7 @@ export const Shopping = (props) => (
 );
 export const Recipes = (props) => (
     <svg
-        className={`icon recipes ${props.active ? 'active' : ''}`}
+        className={`icon recipes ${props.active ? "active" : ""}`}
         width="36"
         height="37"
         viewBox="0 0 36 37"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /*
     ###########################################
@@ -27,7 +27,7 @@ const IconButton = (props) => {
     return (
         <div onClick={onClick} className={`icon-button`}>
             {Icon}
-            {name && <p className='icon-name'>{name}</p>}
+            {name && <p className="icon-name">{name}</p>}
         </div>
     )
 }
