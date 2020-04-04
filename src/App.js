@@ -14,7 +14,7 @@ import Dashboard from "./components/dashboard-screen";
 //ASYNC STUFF
 import { usePromiseTracker } from 'react-promise-tracker';
 import Loader from 'react-loader-spinner';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
 
 function App(props) {
 

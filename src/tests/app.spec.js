@@ -31,22 +31,13 @@ const MockApp = () => {
 }
 //#endregion
 
+let view;
+
 describe('src/app', () => {
+    beforeAll(() => {
+        view = shallow(<MockApp />)
+    })
     it('renders without crashing', () => {
-        const view = shallow(<MockApp />);
         expect(view).toMatchSnapshot();
     })
-
-    it('it has two buttons', () => {
-        const { getAllByTestId } = render(<MockApp />);
-        const buttons = getAllByTestId(/button/i);
-        expect(buttons.length).toBe(2);
-    })
-
-    it('it has a welcome banner', () => {
-        const { getByTestId } = render(<MockApp />);
-        const welcome_msg = getByTestId(/welcome-banner/i);
-        expect(welcome_msg.textContent).toBe("Welcome to Mirra!");
-    })
-
 })
