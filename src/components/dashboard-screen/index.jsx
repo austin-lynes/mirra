@@ -6,8 +6,8 @@ import Foreground from "../foreground";
 const Dashboard = () => {
     return (
         <>
-            <SideRail />
-            <Foreground />
+            <SideRail />;
+            <Foreground />;
         </>
     );
 };

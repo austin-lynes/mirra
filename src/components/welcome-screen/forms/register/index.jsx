@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { trackPromise } from 'react-promise-tracker';
+import { ErrorIcon } from "../../../../icons";
 
 const RegisterForm = (props) => {
     const { setLoginVisible } = props;
@@ -23,7 +24,7 @@ const RegisterForm = (props) => {
 
     const __schema = {
         username: {
-            required: 'Create a Username  EX.  XxMirraBot124xX'
+            required: 'Create a Username '
         },
         email: {
             required: 'enter your email',
@@ -65,16 +66,26 @@ const RegisterForm = (props) => {
             <div className='errors'>
                 {
                     errors.username &&
-                    <p className='error-box'>{errors.username.message}</p>
-                }
-                {
-                    errors.email &&
-                    <p className='error-box'>{errors.email.message}</p>
+                    <div className="error-box">
+                        <ErrorIcon />
+                        <p className='error-text'>{errors.username.message}</p>
+                    </div>
                 }
                 {
                     errors.password &&
-                    <p className='error-box'>{errors.password.message}</p>
+                    <div className="error-box">
+                        <ErrorIcon />
+                        <p className='error-text'>{errors.password.message}</p>
+                    </div>
                 }
+                {
+                    errors.email &&
+                    <div className="error-box">
+                        <ErrorIcon />
+                        <p className='error-text'>{errors.email.message}</p>
+                    </div>
+                }
+
 
             </div>
 

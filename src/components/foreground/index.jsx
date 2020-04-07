@@ -12,7 +12,6 @@ import { toggleForeground, closeForeground } from "../../store/actions/app"
 const Foreground = (props) => {
     const { foreground_open, toggleForeground, closeForeground, app } = props
     const { context } = app
-    console.log(context);
     return (
         <div className={`foreground ${foreground_open ? "open" : !foreground_open && context.length > 0 ? "half-open" : ""}`}>
             <IconButton Icon={<Back open={!foreground_open} />} onClick={toggleForeground} />

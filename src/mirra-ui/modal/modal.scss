@@ -3,24 +3,49 @@
     border-radius: 28px;
     z-index: 100;
     .errors {
-        border-radius: 28px;
+        position: fixed;
         display: flex;
-        flex-flow: column;
-        height: 100%;
-        width: 40%;
-        position: absolute;
-        top: -25px;
-        left: -400px;
-        justify-content: center;
-        
+        flex-flow: row wrap;
+        width: 380px;
+        bottom: 0px;
+        right: 0px;
+        justify-content: flex-start;
+        // padding:10px;
+        background:rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        border-bottom-right-radius: 28px;
+        transition:all .3s ease-in-out;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
         .error-box {
-            width: 80%;
-            margin: 10px auto;
+            margin:0 10px;
+            display: flex;
+            align-items: center;
+            &:nth-of-type(1){
+                margin-top: 15px;
+            }
+            svg{
+                background:red;padding: 5px;
+                height:24px;
+                width: 24px;
+            }
+            .error-text{
+                width:90%;
+                text-align: start;
+                font-weight: bold;
+                padding:5px;
+            }
+            
+            animation: 1s ease-in-out 0s 1 fadeIn;
+            flex-grow: 1;
+            width:80%;
+            margin-bottom: 10px;
             background: lighten(lightpink, 5%);
             border: 2px solid red;
             color: red;
-            padding: 1rem;
-            border-radius: 18px;
+            border-radius: 5px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 28px;
             
         }
         

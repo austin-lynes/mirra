@@ -1,28 +1,20 @@
 import React from "react"
 import { Route, Redirect } from "react-router-dom"
+import TimeoutScreen from "../components/timeout-screen";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-
-    const r_token = localStorage.getItem("refreshToken");
-    const t_token = localStorage.getItem("timeoutToken")
-  
-    return (<Route
-        {...rest}
-        render={props => (
-            r_token ?
-                (<Component {...props} />) :
-                (<Redirect to="/timeout" />)
-        )}
-    />)
+    const accessToken = localStorage.getItem('_access')
+    console.log('accessToken', accessToken)
+    return (
+        <Route
+            {...rest}
+            render={props => (
+                accessToken ?
+                    (<Component {...props} />) :
+                    (<Redirect to='/' />)
+            )}
+        />)
 
 }
 
 export default PrivateRoute
-
-/*
-1584286392845
-1584286398201
-
-
-1585958029
-*/
